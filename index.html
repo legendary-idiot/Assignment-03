@@ -20,7 +20,11 @@
       @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
       body {
         font-family: "Manrope", sans-serif;
+      }
+      header,
+      main {
         max-width: 1440px;
+        margin-inline: auto;
       }
     </style>
   </head>
@@ -736,7 +740,7 @@
             <img
               src="./assets/img1.png"
               alt="Picture of a House"
-              class="block object-cover h-[250px] lg:h-full w-full rounded-xl"
+              class="block object-cover h-[250px] lg:h-full rounded-xl"
             />
             <div class="flex flex-col gap-3 items-start">
               <h2 class="text-2xl text-[#494949] font-bold">Commercial</h2>
@@ -779,7 +783,7 @@
             <img
               src="./assets/img4.png"
               alt="Picture of a House"
-              class="block object-cover h-[250px] lg:h-full w-full rounded-xl"
+              class="block object-cover h-[250px] lg:h-full rounded-xl"
             />
             <div class="flex flex-col gap-3 items-start">
               <h2 class="text-2xl text-[#494949] font-bold">Commercial</h2>
@@ -920,9 +924,26 @@
             class="input input-bordered py-2 col-span-full h-[240px] rounded-3xl"
           ></textarea>
           <button
-            class="col-span-full bg-[#ABEF5F] px-5 py-3 font-extrabold text-lg rounded-full"
+            class="inline-flex items-center justify-center gap-2 col-span-full bg-[#ABEF5F] px-5 py-3 font-extrabold text-lg rounded-full"
           >
             Send Mail
+            <span class="bg-black rounded-full p-[6px] rotate-180"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2.5"
+                stroke="currentColor"
+                class="size-4"
+                color="#fff"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 4.5-15 15m0 0h11.25m-11.25 0V8.25"
+                />
+              </svg>
+            </span>
           </button>
         </form>
       </section>
