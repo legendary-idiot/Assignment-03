@@ -125,7 +125,8 @@
               </svg>
             </span>
           </div>
-          <a class="btn bg-[#ABEF5F] text-lg font-bold rounded-full border-none"
+          <a
+            class="hidden sm:inline-flex btn bg-[#ABEF5F] text-lg font-bold rounded-full border-none"
             >Book Consult
             <span class="bg-black rounded-full p-1 rotate-180"
               ><svg
@@ -147,7 +148,7 @@
         </div>
       </div>
       <!-- Hero Section -->
-      <section class="space-y-6 mx-auto">
+      <section class="space-y-6 mx-auto py-[50px] md:py[100px]">
         <figure>
           <img
             src="./assets/banner.png"
@@ -156,7 +157,7 @@
           />
         </figure>
         <div class="max-w-[1170px] mx-auto text-center space-y-6">
-          <h2 class="text-6xl font-extrabold text-[#212121]">
+          <h2 class="text-3xl md:text-6xl font-extrabold text-[#212121]">
             A barn house of this design has a striking appearance
           </h2>
           <p class="text-[#494949] max-w-[900px] mx-auto font-medium">
@@ -164,19 +165,35 @@
             sophistication, featuring weathered wood, sleek metal accents, and
             large windows that flood the space with natural light.
           </p>
-          <button>View Details</button>
+          <button
+            class="bg-[#ABEF5F80] text-lg font-bold px-6 py-3 rounded-full"
+          >
+            View Details
+            <span class="bg-[#ABEF5F] rounded-full inline-flex p-2 text-base"
+              ><i class="fa-solid fa-arrow-right-long -rotate-45"></i
+            ></span>
+          </button>
         </div>
       </section>
     </header>
-    <main class="space-y-6 bg-[#F4F4F4]">
+    <main class="bg-[#F4F4F4]">
       <!-- About Section -->
-      <section class="lg:flex lg:gap-9 xl:px-[135px] px-4 py-[100px]">
+      <section
+        class="lg:flex lg:gap-9 xl:px-[135px] px-4 py-[50px] lg:py-[100px] space-y-8 lg:space-y-0 mx-auto"
+      >
         <div class="space-y-6 xl:w-3/5">
-          <h1
-            class="text-base text-[#494949] font-bold px-4 py-2 bg-white w-fit rounded-full"
-          >
-            About Us
-          </h1>
+          <div class="relative">
+            <img
+              src="./assets/Vector.png"
+              alt="Vector Wave Image"
+              class="absolute -top-12 -left-12 hidden xl:block"
+            />
+            <h1
+              class="text-base text-[#494949] font-bold px-4 py-2 bg-white w-fit rounded-full"
+            >
+              <span><i class="fa-solid fa-arrow-right-long"></i></span> About Us
+            </h1>
+          </div>
           <h2 class="text-4xl text-[#212121] font-bold">
             We design thoughtful, liveable spaces
           </h2>
@@ -209,7 +226,7 @@
           <img
             src="./assets/Rectangle.png"
             alt="Building Image"
-            class="block h-full"
+            class="block h-[385px] w-full object-cover rounded-3xl lg:h-full mx-auto"
           />
         </figure>
       </section>
@@ -332,11 +349,11 @@
         </div>
       </section>
       <!-- How We Work Section -->
-      <section class="xl:px-[135px] px-4 space-y-6">
+      <section class="xl:px-[135px] px-4 space-y-6 py-[50px] lg:py-[100px]">
         <h1
           class="text-base text-[#494949] font-bold px-4 py-2 mx-auto bg-white w-fit rounded-full"
         >
-          How We Work
+          <span><i class="fa-solid fa-arrow-right-long"></i></span> How We Work
         </h1>
         <div class="max-w-[670px] mx-auto text-center space-y-4">
           <h2 class="text-4xl text-[#212121] font-bold">Our Works Process</h2>
@@ -694,11 +711,14 @@
         </div>
       </section>
       <!-- Latest Portfolio -->
-      <section class="xl:px-[135px] px-4">
+      <section
+        class="xl:px-[135px] px-4 py-[50px] lg:py-[100px] space-y-6 bg-white"
+      >
         <h1
           class="text-base text-[#494949] mx-auto font-bold px-4 py-2 bg-[#ABEF5F33] w-fit rounded-full"
         >
-          Explore our Latest works
+          <span><i class="fa-solid fa-arrow-right-long"></i></span> Explore our
+          Latest works
         </h1>
         <div class="max-w-[670px] mx-auto text-center space-y-4">
           <h2 class="text-4xl text-[#212121] font-bold">
@@ -713,16 +733,25 @@
           <div
             class="lg:col-span-5 col-span-full flex flex-col md:flex-row gap-6 border border-[#E9E9E9] shadow-md p-6 rounded-2xl"
           >
-            <img src="./assets/img1.png" alt="Picture of a House" />
-            <div class="flex flex-col gap-3 justify-between items-start">
+            <img
+              src="./assets/img1.png"
+              alt="Picture of a House"
+              class="block object-cover h-[250px] lg:h-full w-full rounded-xl"
+            />
+            <div class="flex flex-col gap-3 items-start">
               <h2 class="text-2xl text-[#494949] font-bold">Commercial</h2>
-              <p class="text-base text-[#737373] font-medium">
+              <p class="text-base text-[#737373] font-medium flex-grow">
                 The barn house captivates with its blend of rustic charm and
                 modern. The barn house captivates with its blend of rustic charm
                 and modern.
               </p>
-              <button class="text-xl font-bold text-[#212121]">
-                View Details
+              <button
+                class="flex items-center gap-2 text-xl font-bold text-[#212121]"
+              >
+                View Details<span
+                  class="bg-[#ABEF5F] rounded-full inline-flex p-2 text-sm"
+                  ><i class="fa-solid fa-arrow-right-long -rotate-45"></i
+                ></span>
               </button>
             </div>
           </div>
@@ -732,7 +761,7 @@
             <img
               src="./assets/img2.png"
               alt="Picture of a House"
-              class="block object-cover xl:max-h-[200px] w-full rounded-xl"
+              class="block object-cover h-[250px] lg:h-full w-full rounded-xl"
             />
           </figure>
           <figure
@@ -741,21 +770,30 @@
             <img
               src="./assets/img3.png"
               alt="Picture of a House"
-              class="block object-cover w-full rounded-xl"
+              class="block object-cover h-[250px] lg:h-full w-full rounded-xl"
             />
           </figure>
           <div
             class="lg:col-span-4 col-span-full flex flex-col md:flex-row gap-6 border border-[#E9E9E9] shadow-md p-6 rounded-2xl"
           >
-            <img src="./assets/img4.png" alt="Picture of a House" />
-            <div class="flex flex-col gap-3 justify-between items-start">
+            <img
+              src="./assets/img4.png"
+              alt="Picture of a House"
+              class="block object-cover h-[250px] lg:h-full w-full rounded-xl"
+            />
+            <div class="flex flex-col gap-3 items-start">
               <h2 class="text-2xl text-[#494949] font-bold">Commercial</h2>
-              <p class="text-base text-[#737373] font-medium">
+              <p class="text-base text-[#737373] font-medium flex-grow">
                 The barn house captivates with its blend of rustic charm and
                 modern.
               </p>
-              <button class="text-xl font-bold text-[#212121]">
-                View Details
+              <button
+                class="flex items-center gap-2 text-xl font-bold text-[#212121]"
+              >
+                View Details<span
+                  class="bg-[#ABEF5F] rounded-full inline-flex p-2 text-sm"
+                  ><i class="fa-solid fa-arrow-right-long -rotate-45"></i
+                ></span>
               </button>
             </div>
           </div>
@@ -765,15 +803,18 @@
             <img
               src="./assets/img5.png"
               alt="Picture of a House"
-              class="block object-cover w-full rounded-xl"
+              class="block object-cover h-[250px] lg:h-full w-full rounded-xl"
             />
           </figure>
         </div>
       </section>
       <!-- FAQ Section -->
-      <section
-        class="xl:px-[235px] md:px-[80px] px-4 space-y-6 bg-stone-200 py-[100px]"
-      >
+      <section class="xl:px-[235px] md:px-[80px] px-4 space-y-6 py-[100px]">
+        <h1
+          class="text-base text-[#494949] mx-auto font-bold px-4 py-2 bg-[#ABEF5F33] w-fit rounded-full"
+        >
+          <span><i class="fa-solid fa-arrow-right-long"></i></span> FAQ
+        </h1>
         <div class="max-w-[670px] mx-auto text-center space-y-4">
           <h2 class="text-4xl text-[#212121] font-bold">
             Got Questions? We've Got Answers!
@@ -784,7 +825,7 @@
             experience seamless!
           </p>
         </div>
-        <div class="collapse collapse-plus bg-base-200">
+        <div class="collapse collapse-plus bg-white shadow-md">
           <input type="radio" name="my-accordion-3" checked="checked" />
           <div class="collapse-title text-xl font-medium">
             What services do you offer for new homeowners?
@@ -797,7 +838,7 @@
             </p>
           </div>
         </div>
-        <div class="collapse collapse-plus bg-base-200">
+        <div class="collapse collapse-plus bg-white shadow-md">
           <input type="radio" name="my-accordion-3" />
           <div class="collapse-title text-xl font-medium">
             How do you ensure the quality of your recommendations?
@@ -811,7 +852,7 @@
             </p>
           </div>
         </div>
-        <div class="collapse collapse-plus bg-base-200">
+        <div class="collapse collapse-plus bg-white shadow-md">
           <input type="radio" name="my-accordion-3" />
           <div class="collapse-title text-xl font-medium">
             What is the process for scheduling a consultation?
@@ -832,7 +873,8 @@
         <h1
           class="text-base text-[#494949] mx-auto font-bold px-4 py-2 bg-[#ABEF5F33] w-fit rounded-full"
         >
-          Let's Connect
+          <span><i class="fa-solid fa-arrow-right-long"></i></span> Let's
+          Connect
         </h1>
         <div class="max-w-[670px] mx-auto text-center space-y-4">
           <h2 class="text-4xl text-[#212121] font-bold">
