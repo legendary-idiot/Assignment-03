@@ -215,7 +215,7 @@
       </section>
       <!-- Review Section -->
       <section
-        class="xl:mx-[135px] mx-4 p-8 flex items-center justify-between flex-wrap bg-white rounded-2xl"
+        class="xl:mx-[135px] mx-4 p-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 bg-white rounded-2xl"
       >
         <div class="flex flex-col items-center gap-2 p-6">
           <svg
@@ -345,7 +345,7 @@
             sophistication, featuring weathered wood, sleek metal accents.
           </p>
         </div>
-        <div class="flex gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           <div class="p-6 bg-[#E7C1D3] rounded-2xl space-y-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -770,9 +770,64 @@
           </figure>
         </div>
       </section>
+      <!-- FAQ Section -->
+      <section
+        class="xl:px-[235px] md:px-[80px] px-4 space-y-6 bg-stone-200 py-[100px]"
+      >
+        <div class="max-w-[670px] mx-auto text-center space-y-4">
+          <h2 class="text-4xl text-[#212121] font-bold">
+            Got Questions? We've Got Answers!
+          </h2>
+          <p class="text-base text-[#494949]">
+            Find answers to common questions, get quick fixes, and learn more
+            about our services—all in one convenient place. Let's make your
+            experience seamless!
+          </p>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            What services do you offer for new homeowners?
+          </div>
+          <div class="collapse-content">
+            <p>
+              We provide a comprehensive range of services for new homeowners,
+              including property evaluation, renovation planning, and interior
+              design consultations to help you create your dream home.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">
+            How do you ensure the quality of your recommendations?
+          </div>
+          <div class="collapse-content">
+            <p>
+              Our team consists of experienced architects, interior designers,
+              and real estate professionals who adhere to industry best
+              practices and use state-of-the-art tools to provide top-notch
+              advice tailored to your needs.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">
+            What is the process for scheduling a consultation?
+          </div>
+          <div class="collapse-content">
+            <p>
+              Scheduling a consultation is easy! Simply visit our contact page,
+              fill out the form with your details and preferred times, and our
+              team will get back to you promptly to confirm your appointment.
+            </p>
+          </div>
+        </div>
+      </section>
       <!-- Next Project Section -->
       <section
-        class="xl:px-[135px] px-4 space-y-6 bg-[url('./assets/bg.jpg')] bg-center bg-cover bg-no-repeat py-[100px]"
+        class="xl:px-[235px] md:px-[80px] px-4 space-y-6 bg-[url('./assets/bg.jpg')] bg-center bg-cover bg-no-repeat py-[100px]"
       >
         <h1
           class="text-base text-[#494949] mx-auto font-bold px-4 py-2 bg-[#ABEF5F33] w-fit rounded-full"
@@ -787,49 +842,108 @@
             The barn house captivates with its blend of rustic charm and modern
             sophistication, featuring weathered wood, sleek metal accents.
           </p>
-          <form class="grid sm:grid-cols-2 gap-6">
-            <input
-              type="text"
-              name="firstName"
-              placeholder="First Name*"
-              class="input input-bordered rounded-full"
-              required
-            />
-            <input
-              type="text"
-              name="lastName"
-              placeholder="Last Name*"
-              class="input input-bordered rounded-full"
-              required
-            />
-            <input
-              type="text"
-              name="phoneNumber"
-              placeholder="Phone Number*"
-              class="input input-bordered rounded-full"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              class="input input-bordered rounded-full"
-              required
-            />
-            <textarea
-              name="message"
-              placeholder="Write Your Message"
-              class="input input-bordered py-2 col-span-full h-[240px] rounded-3xl"
-            ></textarea>
-            <button
-              class="col-span-full bg-[#ABEF5F] px-5 py-3 font-extrabold text-lg rounded-full"
-            >
-              Send Mail
-            </button>
-          </form>
         </div>
+        <form class="grid sm:grid-cols-2 gap-6">
+          <input
+            type="text"
+            name="firstName"
+            placeholder="First Name*"
+            class="input input-bordered rounded-full"
+            required
+          />
+          <input
+            type="text"
+            name="lastName"
+            placeholder="Last Name*"
+            class="input input-bordered rounded-full"
+            required
+          />
+          <input
+            type="text"
+            name="phoneNumber"
+            placeholder="Phone Number*"
+            class="input input-bordered rounded-full"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            class="input input-bordered rounded-full"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Write Your Message"
+            class="input input-bordered py-2 col-span-full h-[240px] rounded-3xl"
+          ></textarea>
+          <button
+            class="col-span-full bg-[#ABEF5F] px-5 py-3 font-extrabold text-lg rounded-full"
+          >
+            Send Mail
+          </button>
+        </form>
       </section>
     </main>
-    <footer></footer>
+    <footer class="bg-[#1C1C1C] py-[100px] px-6">
+      <div class="max-w-[670px] mx-auto text-center space-y-8">
+        <h2
+          class="inline-flex gap-2 items-center text-2xl text-[#E9E9E9] font-bold"
+        >
+          <span class="bg-[#ABEF5F] rounded-full p-2 rotate-180"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="size-4"
+              color="black"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 4.5-15 15m0 0h11.25m-11.25 0V8.25"
+              />
+            </svg> </span
+          >Rinterio
+        </h2>
+        <p class="text-base text-[#737373] font-medium">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents.
+        </p>
+        <div
+          class="flex flex-col sm:flex-row justify-between gap-4 text-base text-[#E9E9E9] font-medium"
+        >
+          <a href="#">Home</a>
+          <a href="#">Services</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Blogs</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <button
+          class="btn bg-[#ABEF5F] text-lg font-bold rounded-full border-none"
+        >
+          Book Consult
+          <span class="bg-black rounded-full p-1 rotate-180"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+              class="size-4"
+              color="#fff"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 4.5-15 15m0 0h11.25m-11.25 0V8.25"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+    </footer>
   </body>
 </html>
